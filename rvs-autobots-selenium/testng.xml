@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Selenium Java Suite" parallel="tests">
+  <test name="ChromeTest">
+  	<parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="rvs.autobots.selenium.testCases.TestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="FirefoxTest">
+  	<parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="rvs.autobots.selenium.testCases.TestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Selenium Java Suite -->
